@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.home{
+    width: 100%;
+    height: 100vh;
+    /*background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(Bg.jpeg);*/
+    background-image: url(Bg.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 120px;
+    cursor: pointer;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: blue;
+    text-transform: uppercase;
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: aqua;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+.content h1{
+    font-size: 70px;
+    margin-top: 80px;
+}
+.content p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+/*about*/
+#about{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+.about-content{
+    padding-top: 20px;
+    text-align: center;
+}
+/*services*/
+#services{
+    background-image: url(Bg.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+#services h1{
+    text-align: center;
+    padding-bottom: 10px;
+}
+#services h1::after{
+    content: '';
+    background: aqua;
+    display: block;
+    height: 3px;
+    width: 170px;
+    margin: 20px auto 5px;
+}
+.services{
+    margin-top: 40px;
+}
+/*.icon{*/
+/*    font-size: 40px;*/
+/*    margin: 20px auto;*/
+/*    padding: 20px;*/
+/*    height: 80px;*/
+/*    width: 80px;*/
+/*    border: 1px solid #fff;*/
+/*    border-radius: 50%;*/
+/*}*/
+
+#services p{
+    font-size: 14px;
+    margin-top: 20px;
+    text-align: center;
+    /*color: white;*/
+}
+#services h3{
+    text-align: center;
+}
+/*CONTACT*/
+#contact{
+    background: #578588;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+#contact h1{
+    text-align: center;
+    padding-bottom: 10px;
+}
+.contact-form{
+    padding: 15px;
+    text-align: center;
+}
+.form-group{
+    text-align: center;
+}
+.btn-primary{
+    background: blue;
+}
+.form-control{
+    border-radius: 0 !important;
+    border: none !important;
+}
+::placeholder{
+    color: #999 !important;
+}
+.follow{
+    background: #fff;
+    padding: 10px;
+    margin: 15px;
+}
+#footer{
+    background: #333;
+    color: #ffffff;
+    padding: 12px;
+}
